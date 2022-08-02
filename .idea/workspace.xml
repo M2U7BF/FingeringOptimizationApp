@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[追加]最初のアップロード">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/mainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Guitar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新]メソッドなどは空のままで、最低限のコードを追加。">
+      <change afterPath="$PROJECT_DIR$/src/test/java/FindOutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Guitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Process.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,10 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659227574010</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[更新]メソッドなどは空のままで、最低限のコードを追加。">
+      <created>1659314646111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659314646111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[追加]最初のアップロード" />
-    <option name="LAST_COMMIT_MESSAGE" value="[追加]最初のアップロード" />
+    <MESSAGE value="[更新]メソッドなどは空のままで、最低限のコードを追加。" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新]メソッドなどは空のままで、最低限のコードを追加。" />
   </component>
 </project>
