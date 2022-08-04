@@ -19,12 +19,13 @@ public class Process {
 
     private Guitar guitar;
 
+    // TODO : 何本指でするのが最適か、も出せるようにする
+
     public List<int[]> findOut(ConditionForm conditionForm){
         //melodyを展開
         List<String> melodies = conditionForm.getMelodies();
-
         //指板と照らし合わせて候補を出す
-        ////melodyを、一つづつ取り出してそれぞれに適用可能な座標をcandidate(s)として羅列してまとめる
+        ////melodyを、一つづつ取り出してそれぞれに適用可能な座標(何弦の何フレット)をcandidate(s)として羅列してまとめる
         for(int i=0; i < melodies.size(); i++){
             String melody = melodies.get(i);
             guitar = new Guitar();
@@ -34,9 +35,7 @@ public class Process {
                     String fingerboardSound = guitar.FINGERBOARD_DIAGRAM[string][fret];
 
                     if(melody.equals(fingerboardSound)){
-                        int[] pressingPosition = new int[2];
-                        pressingPosition[0] = string;
-                        pressingPosition[1] = fret;
+                        int[] pressingPosition = {string,fret};
 
                         candidates.get(i).add(pressingPosition);
                     }
@@ -44,7 +43,6 @@ public class Process {
             }
 
         }
-        ////この時、座標とは何弦の何フレットである
 
         // 候補の中から最適化
         ////標準偏差のように、距離でばらつきを見る
