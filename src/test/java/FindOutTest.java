@@ -22,6 +22,15 @@ public class FindOutTest {
         assertNotNull(process.findOut(conditionForm));
     }
 
+    @Test
+    void varianceTest(){
+        Process process = new Process();
+        int[] testList = {0,0};
+        List<List<int[]>> test = List.of(List.of(testList));
+
+        assertEquals(0,process.obtainTheVariance(test));
+    };
+
 //    @Test
 //    void 戻り値のList要素の型が適切(){
 //        Process process = new Process();
