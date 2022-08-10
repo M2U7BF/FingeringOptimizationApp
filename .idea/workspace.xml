@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新]findOut()の処理を更新。候補をあげる部分を作成">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 分散を求めるメソッドを追加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FindOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindOutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProcessTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +37,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="FindOutTest.findOutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProcessTest.findOutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FingeringOptimizationApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindOutTest" />
+      <option name="MAIN_CLASS_NAME" value="ProcessTest" />
       <option name="METHOD_NAME" value="findOutTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessTest.戻り値がnullでない" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FingeringOptimizationApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProcessTest" />
+      <option name="METHOD_NAME" value="戻り値がnullでない" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessTest.varianceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FingeringOptimizationApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProcessTest" />
+      <option name="METHOD_NAME" value="varianceTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,7 +81,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindOutTest.findOutTest" />
+        <item itemvalue="JUnit.ProcessTest.varianceTest" />
+        <item itemvalue="JUnit.ProcessTest.戻り値がnullでない" />
+        <item itemvalue="JUnit.ProcessTest.findOutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +117,42 @@
       <option name="project" value="LOCAL" />
       <updated>1659400643289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[更新]テストを記述">
+      <created>1659486855837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659486855837</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[更新]自動的な変更">
+      <created>1659486898219</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659486898219</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[修正] 冗長なコードを修正">
+      <created>1659573559246</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659573559246</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[修正] 分散を求めるメソッドのテストを追加">
+      <created>1659920607960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659920607960</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[更新] 分散を求めるメソッドを追加">
+      <created>1659920649150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659920649150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +170,11 @@
     <MESSAGE value="[追加]最初のアップロード" />
     <MESSAGE value="[更新]メソッドなどは空のままで、最低限のコードを追加。" />
     <MESSAGE value="[更新]findOut()の処理を更新。候補をあげる部分を作成" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新]findOut()の処理を更新。候補をあげる部分を作成" />
+    <MESSAGE value="[更新]テストを記述" />
+    <MESSAGE value="[更新]自動的な変更" />
+    <MESSAGE value="[修正] 冗長なコードを修正" />
+    <MESSAGE value="[修正] 分散を求めるメソッドのテストを追加" />
+    <MESSAGE value="[更新] 分散を求めるメソッドを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] 分散を求めるメソッドを追加" />
   </component>
 </project>
