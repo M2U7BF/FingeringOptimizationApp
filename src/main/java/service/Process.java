@@ -3,20 +3,22 @@ package service;
 import entity.Guitar;
 import form.ConditionForm;
 import org.springframework.stereotype.Service;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class Process {
+    //TODO : 分散の戻り値が1つなのでそこを精査する
+
 //    private int stringNumber;
 //    private int fretNumber;
     private int[] pressingPosition;
-    private List<int[]> candidate;
-    private List<List<int[]>> candidates;
-    private List<int[]> result;
-    private List<List<int[]>> results;
+    private List<int[]> candidate = new ArrayList<>();
+    private List<List<int[]>> candidates = new ArrayList<>();
+    private List<int[]> result = new ArrayList<>();
+    private List<List<int[]>> results = new ArrayList<>();
+    private List<Double> varianceList = new ArrayList<>();
 
     private Guitar guitar;
 
@@ -25,35 +27,68 @@ public class Process {
     public List<int[]> findOut(ConditionForm conditionForm){
         //melodyを展開
         List<String> melodies = conditionForm.getMelodies();
-        //指板と照らし合わせて候補を出す
-        ////melodyを、一つづつ取り出してそれぞれに適用可能な座標(何弦の何フレット)をcandidate(s)として羅列してまとめる
-        for(int i=0; i < melodies.size(); i++){
-            String melody = melodies.get(i);
+        List<List<int[]>> candidates = new ArrayList<>();
+
+        for (String melody : melodies) {
             guitar = new Guitar();
 
-            for(int string=0 ; string < guitar.FINGERBOARD_DIAGRAM.length; string++){
-                for (int fret=0 ; fret < guitar.FINGERBOARD_DIAGRAM[string].length; fret++){
-                    String fingerboardSound = guitar.FINGERBOARD_DIAGRAM[string][fret];
+            candidate = comparingTheMelodySoundTo(Guitar.FINGERBOARD_DIAGRAM, melody);
+            candidates.add(candidate);
+        }
 
-                    if(melody.equals(fingerboardSound)){
-                        int[] pressingPosition = {string,fret};
-                        candidate = new ArrayList<>();
+        varianceList = sortCandidatesByVariance(candidates);
 
-                        //melodyに一致するポジションのリストを作成
-                        candidate.add(pressingPosition);
-                    }
+        //距離の分散の小さい順にならべ、上位5~1件を提出
+        for(int i=0; i<5 && i<varianceList.size(); i++){
+            System.out.println("varianceList.size() : "+varianceList.size());
+            System.out.println("variance : "+String.valueOf(varianceList.get(i)));
+        }
 
-                    candidates.add(candidate);
+        return result;
+    }
+
+    private List<int[]> comparingTheMelodySoundTo(String[][] fingerboardDiagram, String melody) {
+        List<int[]> candidate = new ArrayList<>();
+
+        for (int string = 0; string < Guitar.FINGERBOARD_DIAGRAM.length; string++) {
+            for (int fret = 0; fret < Guitar.FINGERBOARD_DIAGRAM[string].length; fret++) {
+                String fingerboardSound = Guitar.FINGERBOARD_DIAGRAM[string][fret];
+
+                if (melody.equals(fingerboardSound)) {
+                    int[] pressingPosition = {string, fret};
+                    candidate = new ArrayList<>();
+
+                    //melodyに一致するポジションのリストを作成
+                    candidate.add(pressingPosition);
                 }
             }
         }
 
-        // 候補の中から最適化
-        ////距離の標準偏差の小さい順にならべ、上位5件を提出
+        return candidate;
+    }
 
-        obtainTheVariance(candidates);
+    private List<Double> sortCandidatesByVariance(List<List<int[]>> candidates) {
+        //小さい順に並べる =
+        //各組み合わせで分散を算出。その組み合わせを保持
+        if(varianceList.size() == 0){
+            varianceList.add(obtainTheVariance(candidates));
+        }else{
+            //小さい順に並べる
+            for(int i=0; i<varianceList.size(); i++){
+                // TODO : 無限に増えている
+                System.out.println("size : "+varianceList.size());
 
-        return result;
+                double variance = varianceList.get(i);
+
+                if(variance <= obtainTheVariance(candidates)){
+                    varianceList.add(i,variance);
+                } else if (variance >= obtainTheVariance(candidates)) {
+                    varianceList.add(i+1,variance);
+                }
+            }
+        }
+
+        return varianceList;
     }
 
     public double obtainTheVariance(List<List<int[]>> candidates){
