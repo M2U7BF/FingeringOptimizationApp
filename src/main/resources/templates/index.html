@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>運指最適化アプリ</title>
+</head>
+
+<body>
+    <div class="melody-form">
+        <p>曲の音 : </p>
+        <select name="melodies" id="" th:each="i : ${#numbers.sequence(0, 3)}">
+            <th:block th:each="note : ${ { 'A','B','C','D','E','F','G' } }">
+                <option th:value="${note}" th:text="${note}"></option>
+            </th:block>
+        </select>
+    </div>
+    <div class="detailed-condition-form">
+        <p>使う指の本数 : </p>
+        <select name="fingers" id="">
+            <th:block th:each="number : ${#numbers.sequence(0, 4)}">
+                <option th:value="${number}" th:text="${number}"></option>
+            </th:block>
+        </select>
+    </div>
+</body>
+
+</html>
