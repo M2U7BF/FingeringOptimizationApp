@@ -6,7 +6,30 @@
 </head>
 <body>
     <p>結果</p>
+    
+    <th:block th:each="result : ${results}">
+        <th:block>
+            <th:block th:each="position:${result}">
+                <span>[[ |[${position[0]},${position[1]}]| ]]</span>
+            </th:block>
+        </th:block>
+        <ul>
+            <li th:each="i : ${#numbers.sequence(0, 5)}">
+                <p>
+                    <span>[[${i}]]</span>
+                    <span>:</span>
+                    <th:block th:each="j : ${#numbers.sequence(0, 11)}">
+                        <span>[[ |[${i},${j}]| ]]</span>
+                        <th:block th:each="position : ${result}">
+                            <span th:text="${ position[0]==i && position[1]==j } ? '●' : '' "></span>
+                        </th:block>
+                    </th:block>
+                </p>
+            </li>
+        </ul>
+        <br><br><br><br><br>
+    </th:block>
+
     <a th:href="@{/}">RESTART</a>
-<!--    /*<p th:text="${positionList.toString()}"></p>*/-->
 </body>
 </html>
