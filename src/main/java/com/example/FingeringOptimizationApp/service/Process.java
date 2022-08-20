@@ -46,8 +46,9 @@ public class Process {
         //小さい順にならべる
         Collections.sort(varianceList, Collections.reverseOrder());
 
+
         //上位5~1件を戻り値とする
-        System.out.println("[ result ]");
+        System.out.println("[ result ] : 求めた個数 : "+varianceList.size());
         for(int i=0;  i<varianceList.size() && i<5 ; i++){
             System.out.println("variance : "+String.valueOf(varianceList.get(i)));
         }
@@ -59,15 +60,21 @@ public class Process {
         //組み合わせをnCrで考える
         List<List<int[]>> combinations = new ArrayList<>();
 
-        for(List<int[]> candidate : candidates) {
-            List<int[]> combination = new ArrayList<>();
-            Random rand = new Random();
+        for(int i=0; i<candidates.get(0).size(); i++){
+            for(int j=0; j<candidates.get(1).size(); j++){
+                for(int k=0; k<candidates.get(2).size(); k++){
+                    for(int l=0; l<candidates.get(3).size(); l++){
+                        List<int[]> combination = new ArrayList<>();
 
-            for(int i=0; i<candidate.size() ; i++) {
-                int[] position = candidate.get(rand.nextInt(candidate.size()));
-                combination.add(position);//ランダムで取得
+                        combination.add(candidates.get(0).get(i));
+                        combination.add(candidates.get(1).get(j));
+                        combination.add(candidates.get(2).get(k));
+                        combination.add(candidates.get(3).get(l));
+
+                        combinations.add(combination);
+                    }
+                }
             }
-            combinations.add(combination);
         }
 
         return combinations;
