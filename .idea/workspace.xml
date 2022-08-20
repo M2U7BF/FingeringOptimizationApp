@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 分散を求めるメソッドを追加">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 使用しないフィールドを削除">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FindOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProcessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/form/ConditionForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProcessTest.java" afterDir="false" />
+    </list>
+    <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,7 +53,19 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.example.FingeringOptimizationApp.Application">
+    <configuration name="com.example.FingeringOptimizationApp.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.FingeringOptimizationApp.Application" />
+      <module name="FingeringOptimizationApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessTest.findOutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FingeringOptimizationApp" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,9 +98,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.FingeringOptimizationApp.Application" />
+        <item itemvalue="JUnit.ProcessTest.findOutTest" />
         <item itemvalue="JUnit.ProcessTest.varianceTest" />
         <item itemvalue="JUnit.ProcessTest.戻り値がnullでない" />
-        <item itemvalue="JUnit.ProcessTest.findOutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -91,6 +109,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="" />
+      <changelist id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="" />
       <created>1659227335913</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -152,7 +171,140 @@
       <option name="project" value="LOCAL" />
       <updated>1659920649150</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[更新]">
+      <created>1660090681341</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660090681341</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[更新] AssertJの依存関係を追加">
+      <created>1660090701418</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660090701418</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[更新] findOutメソッドとvarianceメソッドのテストを追加">
+      <created>1660091769757</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091769757</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[更新] メソッドの切り分けを行った">
+      <created>1660439162304</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660439162304</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[更新] メソッドの切り分けを行った">
+      <created>1660439198324</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660439198324</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[修正] 各メソッドの引数、ソートの部分を修正">
+      <created>1660611658713</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660611658713</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[追加] 実行クラスの追加">
+      <created>1660783650647</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660783650647</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[更新] メイン画面のメソッドを追加">
+      <created>1660783699375</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660783699375</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[更新] メイン画面の作成">
+      <created>1660783727164</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660783727165</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[修正] クラスの場所を移動">
+      <created>1660783757628</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1660783757628</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[更新] formタグを追加">
+      <created>1660870470341</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1660870470341</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[追加] 結果画面の追加">
+      <created>1660870502760</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1660870502760</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[更新] 変化記号の選択の追加">
+      <created>1660959632981</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1660959632981</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[更新] 組み合わせを生成するメソッドを作成">
+      <created>1660959850244</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660959850244</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[更新] 組み合わせを網羅するメソッドの更新">
+      <created>1660963533319</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660963533319</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[追加] hot swapの設定">
+      <created>1660974508319</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1660974508319</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[更新] 結果となる候補の配列の並び替えを作成">
+      <created>1660974577811</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1660974577811</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[更新] 結果の表示を作成">
+      <created>1660974595799</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1660974595799</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[更新] 使用しないフィールドを削除">
+      <created>1660975599224</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1660975599224</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +319,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[追加]最初のアップロード" />
     <MESSAGE value="[更新]メソッドなどは空のままで、最低限のコードを追加。" />
     <MESSAGE value="[更新]findOut()の処理を更新。候補をあげる部分を作成" />
     <MESSAGE value="[更新]テストを記述" />
@@ -175,6 +326,24 @@
     <MESSAGE value="[修正] 冗長なコードを修正" />
     <MESSAGE value="[修正] 分散を求めるメソッドのテストを追加" />
     <MESSAGE value="[更新] 分散を求めるメソッドを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] 分散を求めるメソッドを追加" />
+    <MESSAGE value="[更新]" />
+    <MESSAGE value="[更新] AssertJの依存関係を追加" />
+    <MESSAGE value="[更新] findOutメソッドとvarianceメソッドのテストを追加" />
+    <MESSAGE value="[更新] メソッドの切り分けを行った" />
+    <MESSAGE value="[修正] 各メソッドの引数、ソートの部分を修正" />
+    <MESSAGE value="[追加] 実行クラスの追加" />
+    <MESSAGE value="[更新] メイン画面のメソッドを追加" />
+    <MESSAGE value="[更新] メイン画面の作成" />
+    <MESSAGE value="[修正] クラスの場所を移動" />
+    <MESSAGE value="[更新] formタグを追加" />
+    <MESSAGE value="[追加] 結果画面の追加" />
+    <MESSAGE value="[更新] 変化記号の選択の追加" />
+    <MESSAGE value="[更新] 組み合わせを生成するメソッドを作成" />
+    <MESSAGE value="[更新] 組み合わせを網羅するメソッドの更新" />
+    <MESSAGE value="[追加] hot swapの設定" />
+    <MESSAGE value="[更新] 結果となる候補の配列の並び替えを作成" />
+    <MESSAGE value="[更新] 結果の表示を作成" />
+    <MESSAGE value="[更新] 使用しないフィールドを削除" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] 使用しないフィールドを削除" />
   </component>
 </project>
