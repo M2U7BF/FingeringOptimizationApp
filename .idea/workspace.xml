@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 使用しないフィールドを削除">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/form/ConditionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/form/ConditionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProcessTest.java" afterDir="false" />
     </list>
-    <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -304,7 +298,56 @@
       <option name="project" value="LOCAL" />
       <updated>1660975599224</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="[更新] 使用しないフィールドをコメントアウト">
+      <created>1660976530778</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976530779</updated>
+    </task>
+    <task id="LOCAL-00029" summary="[更新] デバッグ用の出力文を追加">
+      <created>1660976602937</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976602937</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[更新] 不要なコメント文を削除">
+      <created>1660976625899</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976625899</updated>
+    </task>
+    <task id="LOCAL-00031" summary="[更新] 変化記号の入力部分を削除">
+      <created>1660976679189</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976679189</updated>
+    </task>
+    <task id="LOCAL-00032" summary="[更新]">
+      <created>1660976686381</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976686381</updated>
+    </task>
+    <task id="LOCAL-00033" summary="無視">
+      <created>1660976692700</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976692700</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[更新]">
+      <created>1660976733062</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1660976733062</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,14 +362,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新]メソッドなどは空のままで、最低限のコードを追加。" />
-    <MESSAGE value="[更新]findOut()の処理を更新。候補をあげる部分を作成" />
-    <MESSAGE value="[更新]テストを記述" />
-    <MESSAGE value="[更新]自動的な変更" />
-    <MESSAGE value="[修正] 冗長なコードを修正" />
     <MESSAGE value="[修正] 分散を求めるメソッドのテストを追加" />
     <MESSAGE value="[更新] 分散を求めるメソッドを追加" />
-    <MESSAGE value="[更新]" />
     <MESSAGE value="[更新] AssertJの依存関係を追加" />
     <MESSAGE value="[更新] findOutメソッドとvarianceメソッドのテストを追加" />
     <MESSAGE value="[更新] メソッドの切り分けを行った" />
@@ -344,6 +381,12 @@
     <MESSAGE value="[更新] 結果となる候補の配列の並び替えを作成" />
     <MESSAGE value="[更新] 結果の表示を作成" />
     <MESSAGE value="[更新] 使用しないフィールドを削除" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] 使用しないフィールドを削除" />
+    <MESSAGE value="[更新] 使用しないフィールドをコメントアウト" />
+    <MESSAGE value="[更新] デバッグ用の出力文を追加" />
+    <MESSAGE value="[更新] 不要なコメント文を削除" />
+    <MESSAGE value="[更新] 変化記号の入力部分を削除" />
+    <MESSAGE value="無視" />
+    <MESSAGE value="[更新]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新]" />
   </component>
 </project>
