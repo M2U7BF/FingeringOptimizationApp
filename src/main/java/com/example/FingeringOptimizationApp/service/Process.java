@@ -31,18 +31,6 @@ public class Process {
         //組み合わせを作成
         List<List<int[]>> combinations = GenerateCombinations(candidates);
 
-
-
-        //小さい順にならべる
-//        Collections.sort(varianceList, Collections.reverseOrder());
-
-
-        //上位5~1件を戻り値とする
-//        System.out.println("[ result ] : 求めた個数 : "+varianceList.size());
-//        for(int i=0;  i<varianceList.size() && i<5 ; i++){
-//            System.out.println("variance : "+String.valueOf(varianceList.get(i)));
-//        }
-
         List<List<int[]>> results = sortCombinationsByVariance(combinations);
 
         return results;
