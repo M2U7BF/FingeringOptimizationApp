@@ -1,13 +1,10 @@
-package service;
+package com.example.FingeringOptimizationApp.service;
 
-import entity.Guitar;
-import form.ConditionForm;
+import com.example.FingeringOptimizationApp.entity.Guitar;
+import com.example.FingeringOptimizationApp.form.ConditionForm;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class Process {
@@ -18,8 +15,6 @@ public class Process {
     private List<int[]> result = new ArrayList<>();
     private List<List<int[]>> results = new ArrayList<>();
 
-    private Guitar guitar;
-
     // TODO : 何本指でするのが最適か、も出せるようにする
 
     public List<int[]> findOut(ConditionForm conditionForm){
@@ -28,8 +23,7 @@ public class Process {
         List<List<int[]>> candidates = new ArrayList<>();
 
         for (String melody : melodies) {
-            System.out.println("melodies : "+melodies.size());
-            guitar = new Guitar();
+            Guitar guitar = new Guitar();
 
             //1つの音に対し、候補となる座標をリスト形式でまとめる
             List<int[]> candidate = comparingTheMelodySoundTo(Guitar.FINGERBOARD_DIAGRAM, melody);
@@ -38,32 +32,45 @@ public class Process {
             candidates.add(candidate);
         }
 
-        //組み合わせを考える
         //組み合わせを作成
-        List<int[]> combination = new ArrayList<>();
-        List<List<int[]>> combinations = new ArrayList<>();
+        List<List<int[]>> combinations = GenerateCombinations(candidates);
 
-        for(List<int[]> candidate : candidates) {
-            System.out.println("candidates : "+candidates.size());
-            for(int[] candidatePositon : candidate) {
-                System.out.println("candidate : "+candidate.size());
-                combination.add(candidatePositon);
-            }
-            combinations.add(combination);
-            System.out.println("combination : "+combination.size());
+        //各組み合わせの(距離の)分散を求め、リストへ格納
+        List<Double> varianceList = new ArrayList<>();
+
+        for(List<int[]> combination : combinations) {
+            varianceList.add(obtainTheVariance(combination));
+            System.out.println("variance : "+obtainTheVariance(combination));
         }
 
-        //各組み合わせの(距離の)分散を求め、小さい順にならべる
-        List<Double> varianceList = sortCandidatesByVariance(combinations);
-        System.out.println("戻されたvarianceList : "+varianceList.size());
+        //小さい順にならべる
+        Collections.sort(varianceList, Collections.reverseOrder());
 
         //上位5~1件を戻り値とする
+        System.out.println("[ result ]");
         for(int i=0;  i<varianceList.size() && i<5 ; i++){
-            System.out.println("varianceList.size() : "+varianceList.size());
             System.out.println("variance : "+String.valueOf(varianceList.get(i)));
         }
 
         return result;
+    }
+
+    private List<List<int[]>> GenerateCombinations(List<List<int[]>> candidates) {
+        //組み合わせをnCrで考える
+        List<List<int[]>> combinations = new ArrayList<>();
+
+        for(List<int[]> candidate : candidates) {
+            List<int[]> combination = new ArrayList<>();
+            Random rand = new Random();
+
+            for(int i=0; i<candidate.size() ; i++) {
+                int[] position = candidate.get(rand.nextInt(candidate.size()));
+                combination.add(position);//ランダムで取得
+            }
+            combinations.add(combination);
+        }
+
+        return combinations;
     }
 
     private List<int[]> comparingTheMelodySoundTo(String[][] fingerboardDiagram, String melody) {
@@ -75,7 +82,6 @@ public class Process {
 
                 if (melody.equals(fingerboardSound)) {
                     int[] pressingPosition = {string, fret};
-                    candidate = new ArrayList<>();
 
                     //melodyに一致するポジションのリストを作成
                     candidate.add(pressingPosition);
@@ -132,6 +138,7 @@ public class Process {
         for (double melody : melodiesForCalc){
             average += melody/melodiesForCalc.size();
         }
+        System.out.println("average : "+average);
 
         //分散を求める
         double variance = 0;
