@@ -5,6 +5,7 @@ import com.example.FingeringOptimizationApp.form.ConditionForm;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class Process {
@@ -12,12 +13,12 @@ public class Process {
 //    private int stringNumber;
 //    private int fretNumber;
     private int[] pressingPosition;
-    private List<int[]> result = new ArrayList<>();
-    private List<List<int[]>> results = new ArrayList<>();
+//    private List<int[]> result = new ArrayList<>();
+//    private List<List<int[]>> results = new ArrayList<>();
 
     // TODO : 何本指でするのが最適か、も出せるようにする
 
-    public List<int[]> findOut(ConditionForm conditionForm){
+    public List<List<int[]>> findOut(ConditionForm conditionForm){
         //melodyを展開
         List<String> melodies = conditionForm.getMelodies();
         List<List<int[]>> candidates = new ArrayList<>();
@@ -35,25 +36,21 @@ public class Process {
         //組み合わせを作成
         List<List<int[]>> combinations = GenerateCombinations(candidates);
 
-        //各組み合わせの(距離の)分散を求め、リストへ格納
-        List<Double> varianceList = new ArrayList<>();
 
-        for(List<int[]> combination : combinations) {
-            varianceList.add(obtainTheVariance(combination));
-            System.out.println("variance : "+obtainTheVariance(combination));
-        }
 
         //小さい順にならべる
-        Collections.sort(varianceList, Collections.reverseOrder());
+//        Collections.sort(varianceList, Collections.reverseOrder());
 
 
         //上位5~1件を戻り値とする
-        System.out.println("[ result ] : 求めた個数 : "+varianceList.size());
-        for(int i=0;  i<varianceList.size() && i<5 ; i++){
-            System.out.println("variance : "+String.valueOf(varianceList.get(i)));
-        }
+//        System.out.println("[ result ] : 求めた個数 : "+varianceList.size());
+//        for(int i=0;  i<varianceList.size() && i<5 ; i++){
+//            System.out.println("variance : "+String.valueOf(varianceList.get(i)));
+//        }
 
-        return result;
+        List<List<int[]>> results = sortCombinationsByVariance(combinations);
+
+        return results;
     }
 
     private List<List<int[]>> GenerateCombinations(List<List<int[]>> candidates) {
@@ -99,37 +96,65 @@ public class Process {
         return candidate;
     }
 
-    private List<Double> sortCandidatesByVariance(List<List<int[]>> combinations) {
+    private List<List<int[]>> sortCombinationsByVariance(List<List<int[]>> combinations) {
+        //各組み合わせの(距離の)分散を求め、リストへ格納
         List<Double> varianceList = new ArrayList<>();
 
-        for(List<int[]> combination : combinations) {
-            varianceList.add(obtainTheVariance(combination));
+        quicksort(combinations,0,combinations.size()-1);
+
+        List<List<int[]>> results = new ArrayList<>();
+        List<List<int[]>> sub_results = new ArrayList<>();
+
+        //重複を排除(有効かは不明)
+        sub_results = combinations
+                .stream()
+                .distinct()
+                .collect(Collectors.toList());
+
+        for(int i=0; i<6 && i<combinations.size(); i++){
+            results.add(sub_results.get(i));
         }
 
-        Collections.sort(varianceList, Collections.reverseOrder());
+        //5件返す
+        return results;
+    }
 
-        //小さい順に並べる =
-        //各組み合わせで分散を算出。その組み合わせを保持
-//        for(List<int[]> combination : combinations){
-//            System.out.println("combinations : "+combinations.size());
-//            if(varianceList.size() == 0){
-//                varianceList.add(obtainTheVariance(combination));
-//            }else{
-//                //小さい順に並べる
-//                for(int i=0; i<varianceList.size(); i++){
-////                    System.out.println("varianceList : "+varianceList.size());
-//
-//                    if(varianceList.get(i) <= obtainTheVariance(combination)){
-//                        varianceList.add(i,obtainTheVariance(combination));
-//                        //TODO : 無限
-//                    } else {
-//                        varianceList.add(i+1,obtainTheVariance(combination));
-//                    }
-//                }
-//            }
-//        }
+    public void swap (List<List<int[]>> arr, int i, int j) {
+        List<int[]> temp = arr.get(i);
+        arr.set(i,arr.get(j));
+        arr.set(j,temp);
+    }
 
-        return varianceList;
+    public int partition(List<List<int[]>> a, int start, int end) {
+        double pivot = obtainTheVariance(a.get(end));
+
+        int pIndex = start;
+
+        for (int i = start; i < end; i++) {
+            if (obtainTheVariance(a.get(i)) <= pivot) {
+                swap(a, i, pIndex);
+                pIndex++;
+            }
+        }
+
+        swap(a, end, pIndex);
+
+        return pIndex;
+    }
+
+    //クイックソートルーチン
+    public void quicksort(List<List<int[]>> a, int start, int end)
+    {
+        //基本条件
+        if (start >= end) {
+            return;
+        }
+
+        int pivot = partition(a, start, end);
+
+        quicksort(a, start, pivot - 1);
+
+        quicksort(a, pivot + 1, end);
     }
 
     public double obtainTheVariance(List<int[]> combination){
@@ -145,7 +170,6 @@ public class Process {
         for (double melody : melodiesForCalc){
             average += melody/melodiesForCalc.size();
         }
-        System.out.println("average : "+average);
 
         //分散を求める
         double variance = 0;
