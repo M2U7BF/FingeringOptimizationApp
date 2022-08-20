@@ -9,12 +9,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class Process {
-
-//    private int stringNumber;
-//    private int fretNumber;
     private int[] pressingPosition;
-//    private List<int[]> result = new ArrayList<>();
-//    private List<List<int[]>> results = new ArrayList<>();
 
     // TODO : 何本指でするのが最適か、も出せるようにする
 
