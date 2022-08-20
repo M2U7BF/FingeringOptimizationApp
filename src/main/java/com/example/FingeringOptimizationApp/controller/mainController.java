@@ -23,17 +23,28 @@ public class mainController {
     @Autowired
     Process process;
 
-    @GetMapping("home")
+    @GetMapping("")
     public String index(){
         return "index";
     }
 
     @PostMapping("findout")
      public String findOut(ConditionForm f, Model model){
+        System.out.println("[ 入力 ]");
+        System.out.println(f.getMelodies().toString());
         //処理
-        List<int[]> result = process.findOut(f);
+        List<List<int[]>> results = process.findOut(f);
 
-        model.addAttribute(result);
+        System.out.println("[ 結果 ]");
+        for(List<int[]> result :results){
+            String str = new String();
+            for(int[] position : result){
+                str += "["+position[0]+","+position[1]+"]";
+            }
+            System.out.println(str);
+        }
+
+        model.addAttribute("results",results);
         return "result";
      }
 }
