@@ -1,6 +1,6 @@
-import form.ConditionForm;
+import com.example.FingeringOptimizationApp.form.ConditionForm;
 import org.junit.jupiter.api.Test;
-import service.Process;
+import com.example.FingeringOptimizationApp.service.Process;
 
 import java.util.List;
 
@@ -18,10 +18,11 @@ public class ProcessTest {
         conditionForm.setFingers(4);
 
         assertThat(process.findOut(conditionForm))
+                .as("findOut()の戻り値がnullではない")
                 .isNotNull();
+//        assertThat(process.findOut(conditionForm))
+//                .isInstanceOf(List.class);
 
-        assertThat(process.findOut(conditionForm))
-                .isInstanceOf(List.class);
     }
 
     @Test
@@ -29,12 +30,13 @@ public class ProcessTest {
         Process process = new Process();
         int[] testList = {0,0};
         List<List<int[]>> test = List.of(List.of(testList));
+        List<int[]> test2 = List.of(testList);
 
-        assertThat(0)
+        assertThat(0.0)
                 .as("結果が0に等しいか")
-                .isEqualTo(process.obtainTheVariance(test));
+                .isEqualTo(process.obtainTheVariance(test2));
 
-        assertThat(process.obtainTheVariance(test))
+        assertThat(process.obtainTheVariance(test2))
                 .as("0以上か")
                 .isGreaterThanOrEqualTo(0);
 
