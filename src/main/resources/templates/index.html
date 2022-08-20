@@ -11,24 +11,20 @@
         <p>曲の音 : </p>
         <th:block th:each="i : ${#numbers.sequence(0, 3)}">
             <select name="melodies">
-                <th:block th:each="note : ${ { 'A','B','C','D','E','F','G' } }">
+                <th:block th:each="note : ${ { 'A','Bm','B','C','Dm','D','Em','E','F','G♭','G','Am' } }">
                     <option th:value="${note}" th:text="${note}"></option>
                 </th:block>
             </select>
-            <select name="accidentals">
-                <option value=""></option>
-                <th:block th:each="accidentals : ${ { 'm','♭' } }">
-                    <option th:value="${accidentals}" th:text="${accidentals}"></option>
-                </th:block>
-            </select>
         </th:block>
-        <p>使う指の本数 : </p>
+        <!-- <p>使う指の本数 : </p>
         <select name="fingers">
             <th:block th:each="number : ${#numbers.sequence(0, 4)}">
                 <option th:value="${number}" th:text="${number}"></option>
             </th:block>
-        </select>
-        <button type="submit">分析</button>
+        </select> -->
+        <div>
+            <button type="submit">分析</button>
+        </div>
     </form>
 </body>
 
