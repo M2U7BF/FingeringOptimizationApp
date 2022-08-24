@@ -2,35 +2,39 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/base-layout}">
 <head>
     <title>result | 運指最適化アプリ </title>
+    <link rel="stylesheet" href="../result.css">
 </head>
 <body>
 <th:block layout:fragment="content">
-    <p>結果</p>
-    
-    <th:block th:each="result : ${results}">
-        <th:block>
-            <th:block th:each="position:${result}">
-                <span>[[ |[${position[0]},${position[1]}]| ]]</span>
-            </th:block>
-        </th:block>
-        <ul>
-            <li th:each="i : ${#numbers.sequence(0, 5)}">
-                <p>
-                    <span>[[${i}]]</span>
-                    <span>:</span>
-                    <th:block th:each="j : ${#numbers.sequence(0, 11)}">
-                        <span>[[ |[${i},${j}]| ]]</span>
-                        <th:block th:each="position : ${result}">
-                            <span th:text="${ position[0]==i && position[1]==j } ? '●' : '' "></span>
-                        </th:block>
-                    </th:block>
-                </p>
-            </li>
-        </ul>
-        <br><br><br><br><br>
-    </th:block>
+    <main class="contents">
+        <h1 class="normal-text content-description">結果 : </h1>
 
-    <a th:href="@{/}">RESTART</a>
+        <th:block th:each="result : ${results}">
+            <h2 class="result-summary secondary-text">
+                <span class="result-summary-text">
+                    <th:block th:each="position:${result}">
+                        <span>[[ |(${position[0]},${position[1]})| ]]</span>
+                    </th:block>
+                </span>
+            </h2>
+            <ul>
+                <li class="result-list-elem normal-text" th:each="i : ${#numbers.sequence(0, 5)}">
+                    <p>
+                        <span>[[${i}]]</span>
+                        <span>:</span>
+                        <th:block th:each="j : ${#numbers.sequence(0, 11)}">
+                            <span class="flet-number">[[ |${j}| ]]</span>
+                            <th:block th:each="position : ${result}">
+                                <span th:text="${ position[0]==i && position[1]==j } ? '●' : '' "></span>
+                            </th:block>
+                        </th:block>
+                    </p>
+                </li>
+            </ul>
+            <br><br><br><br><br>
+        </th:block>
+        <a class="btn btn-primary btn-lg" th:href="@{/}">RESTART</a>
+    </main>
 </th:block>
 </body>
 </html>

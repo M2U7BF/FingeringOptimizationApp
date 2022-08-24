@@ -1,0 +1,11 @@
+.condition-form-inner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+.form-select{
+    width: 50vh;
+}

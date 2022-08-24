@@ -1,0 +1,19 @@
+.content-description{
+    margin-bottom: 30px;
+}
+
+.result-summary{
+    margin-bottom: 20px;
+}
+.result-summary-text{
+    border-bottom: 2px solid rgb(179, 179, 179);
+    padding-bottom: 10px;
+}
+
+.result-list-elem{
+    list-style-type: none;
+}
+
+.flet-number{
+    margin: 0px 20px;
+}
