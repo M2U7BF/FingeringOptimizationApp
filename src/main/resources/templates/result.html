@@ -7,6 +7,7 @@
 <body>
 <th:block layout:fragment="content">
     <main class="contents">
+        <a class="restart-button btn btn-primary btn-lg" th:href="@{/}">RESTART</a>
         <h1 class="normal-text content-description">結果 : </h1>
 
         <th:block th:each="result : ${results}">
@@ -33,7 +34,7 @@
             </ul>
             <br><br><br><br><br>
         </th:block>
-        <a class="btn btn-primary btn-lg" th:href="@{/}">RESTART</a>
+        <a class="restart-button btn btn-primary btn-lg" th:href="@{/}">RESTART</a>
     </main>
 </th:block>
 </body>
