@@ -1,3 +1,7 @@
+.contents{
+    height: 100vh;
+}
+
 .condition-form-inner{
     display: flex;
     justify-content: center;
