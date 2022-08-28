@@ -1,6 +1,7 @@
 package com.example.FingeringOptimizationApp.controller;
 
 import com.example.FingeringOptimizationApp.form.ConditionForm;
+import com.example.FingeringOptimizationApp.service.SubProcess;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +23,8 @@ public class mainController {
 
     @Autowired
     Process process;
+    @Autowired
+    SubProcess subProcess;
 
     @GetMapping("")
     public String index(){
@@ -44,7 +47,11 @@ public class mainController {
             System.out.println(str);
         }
 
+        List<boolean[][]> bitLists = subProcess.convertBitList(results);
+
         model.addAttribute("results",results);
+        model.addAttribute("bitLists",bitLists);
+
         return "result";
      }
 }
