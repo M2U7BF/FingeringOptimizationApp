@@ -15,8 +15,11 @@
 }
 
 .flet-number{
-    margin: 0px 10px;
-    padding: 3px 10px;
+    margin: 0px;
+    padding: 0px 10px;
+}
+.flet-number-wrapper{
+    padding: 1vh 1vw;
 }
 
 .result-position{
