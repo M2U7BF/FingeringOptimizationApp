@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 結果表示のスタイルを修正">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 弦、フレット の番号の表示を実物に一致させた">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,13 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[修正] 冗長なコードを修正">
-      <created>1659573559246</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659573559246</updated>
     </task>
     <task id="LOCAL-00007" summary="[修正] 分散を求めるメソッドのテストを追加">
       <created>1659920607960</created>
@@ -458,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661649692366</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="[更新] 弦、フレット の番号の表示を実物に一致させた">
+      <created>1662079845720</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1662079845720</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -473,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新] 組み合わせを網羅するメソッドの更新" />
     <MESSAGE value="[追加] hot swapの設定" />
     <MESSAGE value="[更新] 結果となる候補の配列の並び替えを作成" />
     <MESSAGE value="[更新] 結果の表示を作成" />
@@ -498,6 +495,7 @@
     <MESSAGE value="[更新] ヘッダーのスタイルを更新" />
     <MESSAGE value="[更新] 結果表示をよりわかりやすいように作成" />
     <MESSAGE value="[更新] 結果表示のスタイルを修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] 結果表示のスタイルを修正" />
+    <MESSAGE value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
   </component>
 </project>

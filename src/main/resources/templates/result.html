@@ -16,7 +16,7 @@
                     <h2 class="result-summary secondary-text">
                         <span class="result-summary-text">
                             <th:block th:each="position:${results.get(h)}">
-                                <span>[[ |(${position[0]},${position[1]})| ]]</span>
+                                <span>[[ |(${position[0]+1},${position[1]+1})| ]]</span>
                             </th:block>
                         </span>
                     </h2>
