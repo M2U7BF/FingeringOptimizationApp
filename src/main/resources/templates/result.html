@@ -23,15 +23,15 @@
                     <table>
                         <tr class="result-list-elem normal-text" th:each="i :
                             ${#numbers.sequence(0, 5)}">
-                            <td>
-                                <span>[[${i}]]</span><span>:</span>
+                            <td class="string">
+                                <span>[[${i+1}]]</span><span>:</span>
                             </td>
                             <th:block th:each="j : ${#numbers.sequence(0, 11)}">
                                 <td>
                                     <div class="flet-number-wrapper">
                                         <span th:class="${bitLists.get(h)[i][j]}?
                                             'flet-number result-position' :
-                                            flet-number">[[ |${j}| ]]</span>
+                                            flet-number">[[ |${j+1}| ]]</span>
                                     </div>
                                 </td>
                             </th:block>

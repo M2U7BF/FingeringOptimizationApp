@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] タイトルを更新">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 結果表示のスタイルを修正">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -117,41 +114,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00001" summary="[追加]最初のアップロード">
-      <created>1659227574010</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659227574010</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[更新]メソッドなどは空のままで、最低限のコードを追加。">
-      <created>1659314646111</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1659314646111</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[更新]findOut()の処理を更新。候補をあげる部分を作成">
-      <created>1659400643288</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659400643289</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[更新]テストを記述">
-      <created>1659486855837</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659486855837</updated>
-    </task>
-    <task id="LOCAL-00005" summary="[更新]自動的な変更">
-      <created>1659486898219</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659486898219</updated>
     </task>
     <task id="LOCAL-00006" summary="[修正] 冗長なコードを修正">
       <created>1659573559246</created>
@@ -447,7 +409,56 @@
       <option name="project" value="LOCAL" />
       <updated>1661301002454</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="[更新] スタイルの追加作成">
+      <created>1661344956456</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1661344956456</updated>
+    </task>
+    <task id="LOCAL-00049" summary="[更新] スタイルの追加作成">
+      <created>1661473506833</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1661473506833</updated>
+    </task>
+    <task id="LOCAL-00050" summary="[更新] 再度分析するボタンを増加">
+      <created>1661473544158</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1661473544158</updated>
+    </task>
+    <task id="LOCAL-00051" summary="[更新] フッターの作成">
+      <created>1661473998381</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1661473998381</updated>
+    </task>
+    <task id="LOCAL-00052" summary="[更新] ヘッダーのスタイルを更新">
+      <created>1661474227537</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1661474227537</updated>
+    </task>
+    <task id="LOCAL-00053" summary="[更新] 結果表示をよりわかりやすいように作成">
+      <created>1661647551590</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1661647551590</updated>
+    </task>
+    <task id="LOCAL-00054" summary="[更新] 結果表示のスタイルを修正">
+      <created>1661649692366</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1661649692366</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,12 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新] メイン画面の作成" />
-    <MESSAGE value="[修正] クラスの場所を移動" />
-    <MESSAGE value="[更新] formタグを追加" />
-    <MESSAGE value="[追加] 結果画面の追加" />
-    <MESSAGE value="[更新] 変化記号の選択の追加" />
-    <MESSAGE value="[更新] 組み合わせを生成するメソッドを作成" />
     <MESSAGE value="[更新] 組み合わせを網羅するメソッドの更新" />
     <MESSAGE value="[追加] hot swapの設定" />
     <MESSAGE value="[更新] 結果となる候補の配列の並び替えを作成" />
@@ -487,6 +492,12 @@
     <MESSAGE value="[追加] ヘッ&#10;ダーのhtmlソースを追加" />
     <MESSAGE value="[追加] ヘッダーのhtmlソースを追加" />
     <MESSAGE value="[更新] タイトルを更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] タイトルを更新" />
+    <MESSAGE value="[更新] スタイルの追加作成" />
+    <MESSAGE value="[更新] 再度分析するボタンを増加" />
+    <MESSAGE value="[更新] フッターの作成" />
+    <MESSAGE value="[更新] ヘッダーのスタイルを更新" />
+    <MESSAGE value="[更新] 結果表示をよりわかりやすいように作成" />
+    <MESSAGE value="[更新] 結果表示のスタイルを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] 結果表示のスタイルを修正" />
   </component>
 </project>
