@@ -45,6 +45,7 @@ public class mainController {
             for(int[] position : result){
                 str += Arrays.toString(position);
             }
+            System.out.println(str);
         }
 
         List<boolean[][]> bitLists = subProcess.convertBitList(results);
