@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] obtainTheVarianceメソッドのテストコードの追加">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] リストの出力を修正">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +58,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProcessTest.varianceTest">
+  <component name="RunManager" selected="Application.com.example.FingeringOptimizationApp.Application">
     <configuration name="com.example.FingeringOptimizationApp.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.FingeringOptimizationApp.Application" />
       <module name="FingeringOptimizationApp" />
@@ -107,10 +108,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.FingeringOptimizationApp.Application" />
         <item itemvalue="JUnit.ProcessTest.varianceTest" />
         <item itemvalue="JUnit.ProcessTest.findOutTest" />
         <item itemvalue="JUnit.SubProcessTest.convertBitListTest" />
-        <item itemvalue="Application.com.example.FingeringOptimizationApp.Application" />
         <item itemvalue="JUnit.ProcessTest.戻り値がnullでない" />
       </list>
     </recent_temporary>
@@ -124,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00011" summary="[更新] findOutメソッドとvarianceメソッドのテストを追加">
-      <created>1660091769757</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1660091769757</updated>
     </task>
     <task id="LOCAL-00012" summary="[更新] メソッドの切り分けを行った">
       <created>1660439162304</created>
@@ -468,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662264111741</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="[更新] リストの出力を修正">
+      <created>1662264534026</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1662264534026</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新] 使用しないフィールドを削除" />
     <MESSAGE value="[更新] 使用しないフィールドをコメントアウト" />
     <MESSAGE value="[更新] デバッグ用の出力文を追加" />
     <MESSAGE value="[更新] 不要なコメント文を削除" />
@@ -508,6 +508,7 @@
     <MESSAGE value="[更新] テストコードの追加" />
     <MESSAGE value="[更新] findOutメソッドのテストコードの追加" />
     <MESSAGE value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
+    <MESSAGE value="[更新] リストの出力を修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] リストの出力を修正" />
   </component>
 </project>
