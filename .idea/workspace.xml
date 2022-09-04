@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] findOutメソッドのテストコードの追加">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] obtainTheVarianceメソッドのテストコードの追加">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/ProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/ProcessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/controller/mainController.java" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00010" summary="[更新] AssertJの依存関係を追加">
-      <created>1660090701418</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1660090701418</updated>
     </task>
     <task id="LOCAL-00011" summary="[更新] findOutメソッドとvarianceメソッドのテストを追加">
       <created>1660091769757</created>
@@ -469,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662262004808</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="[更新] obtainTheVarianceメソッドのテストコードの追加">
+      <created>1662264111741</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1662264111741</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新] 結果の表示を作成" />
     <MESSAGE value="[更新] 使用しないフィールドを削除" />
     <MESSAGE value="[更新] 使用しないフィールドをコメントアウト" />
     <MESSAGE value="[更新] デバッグ用の出力文を追加" />
@@ -509,6 +507,7 @@
     <MESSAGE value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
     <MESSAGE value="[更新] テストコードの追加" />
     <MESSAGE value="[更新] findOutメソッドのテストコードの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] findOutメソッドのテストコードの追加" />
+    <MESSAGE value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
   </component>
 </project>

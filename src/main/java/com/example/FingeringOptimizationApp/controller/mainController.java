@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.FingeringOptimizationApp.service.Process;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Controller
@@ -42,9 +43,8 @@ public class mainController {
         for(List<int[]> result :results){
             String str = new String();
             for(int[] position : result){
-                str += "["+position[0]+","+position[1]+"]";
+                str += Arrays.toString(position);
             }
-            System.out.println(str);
         }
 
         List<boolean[][]> bitLists = subProcess.convertBitList(results);
