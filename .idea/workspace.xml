@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 弦、フレット の番号の表示を実物に一致させた">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] テストコードの追加">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/SubProcessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/SubProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/SubProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/form/ConditionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/form/ConditionForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/ProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/ProcessTest.java" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SubProcessTest.convertBitListTest">
+  <component name="RunManager" selected="JUnit.ProcessTest.findOutTest">
     <configuration name="com.example.FingeringOptimizationApp.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.FingeringOptimizationApp.Application" />
       <module name="FingeringOptimizationApp" />
@@ -111,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProcessTest.findOutTest" />
         <item itemvalue="JUnit.SubProcessTest.convertBitListTest" />
         <item itemvalue="Application.com.example.FingeringOptimizationApp.Application" />
-        <item itemvalue="JUnit.ProcessTest.findOutTest" />
         <item itemvalue="JUnit.ProcessTest.varianceTest" />
         <item itemvalue="JUnit.ProcessTest.戻り値がnullでない" />
       </list>
@@ -128,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00008" summary="[更新] 分散を求めるメソッドを追加">
-      <created>1659920649150</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659920649150</updated>
     </task>
     <task id="LOCAL-00009" summary="[更新]">
       <created>1660090681341</created>
@@ -472,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662080432294</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="[更新] テストコードの追加">
+      <created>1662254284366</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1662254284367</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -487,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[追加] hot swapの設定" />
     <MESSAGE value="[更新] 結果となる候補の配列の並び替えを作成" />
     <MESSAGE value="[更新] 結果の表示を作成" />
     <MESSAGE value="[更新] 使用しないフィールドを削除" />
@@ -512,6 +509,7 @@
     <MESSAGE value="[更新] 結果表示をよりわかりやすいように作成" />
     <MESSAGE value="[更新] 結果表示のスタイルを修正" />
     <MESSAGE value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
+    <MESSAGE value="[更新] テストコードの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] テストコードの追加" />
   </component>
 </project>

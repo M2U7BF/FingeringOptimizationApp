@@ -11,18 +11,39 @@ public class ProcessTest {
     void findOutTest(){
         Process process = new Process();
 
-        ConditionForm conditionForm = new ConditionForm();
-        List<int[]> result;
+        //nullでないことを確かめる
+        ConditionForm conditionForm = new ConditionForm(
+                List.of("A","B","C","D"),
+                4
+        );
+        isFindOutTestNull(process.findOut(conditionForm));
 
-        conditionForm.setMelodies(List.of("A","B","C","D"));
-        conditionForm.setFingers(4);
 
-        assertThat(process.findOut(conditionForm))
-                .as("findOut()の戻り値がnullではない")
-                .isNotNull();
-//        assertThat(process.findOut(conditionForm))
-//                .isInstanceOf(List.class);
+        conditionForm = new ConditionForm(
+                List.of("A","B","C","3"),
+                4
+        );
+        isFindOutTestNull(process.findOut(conditionForm));
 
+
+        conditionForm = new ConditionForm(
+                List.of("M","B","C","D"),
+                4
+        );
+        isFindOutTestNull(process.findOut(conditionForm));
+
+
+        conditionForm = new ConditionForm(
+                List.of("M","B","C","D"),
+                10
+        );
+        isFindOutTestNull(process.findOut(conditionForm));
+    }
+
+    public void isFindOutTestNull(List<List<int[]>> result){
+        if (result == null){
+            throw new RuntimeException("It is null");
+        }
     }
 
     @Test
@@ -41,7 +62,6 @@ public class ProcessTest {
                 .isGreaterThanOrEqualTo(0);
 
     };
-
 //    @Test
 //    void 戻り値のList要素の型が適切(){
 //        Process process = new Process();
@@ -57,5 +77,4 @@ public class ProcessTest {
 //
 //        assertTrue(i == result.get(0)[0]);
 //    }
-
 }
