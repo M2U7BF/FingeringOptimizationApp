@@ -12,5 +12,6 @@ import java.util.List;
 public class ConditionForm {
     //    private int barQuantity;
     private List<String> melodies;
+    private List<Integer> octaves;
     private int fingers;
 }
