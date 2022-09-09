@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] リストの出力を修正">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[修正] 出力のコードを修正">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/entity/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/pojo/Guitar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,20 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00012" summary="[更新] メソッドの切り分けを行った">
-      <created>1660439162304</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1660439162304</updated>
-    </task>
-    <task id="LOCAL-00013" summary="[更新] メソッドの切り分けを行った">
-      <created>1660439198324</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1660439198324</updated>
     </task>
     <task id="LOCAL-00014" summary="[修正] 各メソッドの引数、ソートの部分を修正">
       <created>1660611658713</created>
@@ -469,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662264534026</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="[修正] 不要なコードを削除">
+      <created>1662266179432</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1662266179432</updated>
+    </task>
+    <task id="LOCAL-00062" summary="[修正] 出力のコードを修正">
+      <created>1662266191436</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1662266191436</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,8 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[更新] 使用しないフィールドをコメントアウト" />
-    <MESSAGE value="[更新] デバッグ用の出力文を追加" />
     <MESSAGE value="[更新] 不要なコメント文を削除" />
     <MESSAGE value="[更新] 変化記号の入力部分を削除" />
     <MESSAGE value="無視" />
@@ -509,6 +508,8 @@
     <MESSAGE value="[更新] findOutメソッドのテストコードの追加" />
     <MESSAGE value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
     <MESSAGE value="[更新] リストの出力を修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] リストの出力を修正" />
+    <MESSAGE value="[修正] 不要なコードを削除" />
+    <MESSAGE value="[修正] 出力のコードを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[修正] 出力のコードを修正" />
   </component>
 </project>

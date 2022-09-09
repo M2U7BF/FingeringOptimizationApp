@@ -1,6 +1,6 @@
 package com.example.FingeringOptimizationApp.service;
 
-import com.example.FingeringOptimizationApp.entity.Guitar;
+import com.example.FingeringOptimizationApp.pojo.Guitar;
 import com.example.FingeringOptimizationApp.form.ConditionForm;
 import org.springframework.stereotype.Service;
 
