@@ -1,4 +1,4 @@
-package com.example.FingeringOptimizationApp.pojo;
+package com.example.FingeringOptimizationApp.entity;
 
 import lombok.Data;
 
