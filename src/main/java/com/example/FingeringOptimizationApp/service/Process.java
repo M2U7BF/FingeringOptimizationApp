@@ -1,6 +1,6 @@
 package com.example.FingeringOptimizationApp.service;
 
-import com.example.FingeringOptimizationApp.pojo.Guitar;
+import com.example.FingeringOptimizationApp.entity.Guitar;
 import com.example.FingeringOptimizationApp.form.ConditionForm;
 import org.springframework.stereotype.Service;
 
@@ -14,15 +14,18 @@ public class Process {
     // TODO : 何本指でするのが最適か、も出せるようにする
 
     public List<List<int[]>> findOut(ConditionForm conditionForm){
-        //melodyを展開
+        //melodyを取得
         List<String> melodies = conditionForm.getMelodies();
+        List<Integer> octaves = conditionForm.getOctaves();
         List<List<int[]>> candidates = new ArrayList<>();
 
-        for (String melody : melodies) {
+        for (int i = 0; i < melodies.size(); i++) {
             Guitar guitar = new Guitar();
+            String melody = melodies.get(i);
+            int octave = octaves.get(i);
 
             //1つの音に対し、候補となる座標をリスト形式でまとめる
-            List<int[]> candidate = comparingTheMelodySoundTo(Guitar.FINGERBOARD_DIAGRAM, melody);
+            List<int[]> candidate = comparingTheMelodySoundTo(Guitar.FINGERBOARD_DIAGRAM, melody, octave);
 
             //リストをリストとしてまとめる
             candidates.add(candidate);
@@ -60,14 +63,15 @@ public class Process {
         return combinations;
     }
 
-    private List<int[]> comparingTheMelodySoundTo(String[][] fingerboardDiagram, String melody) {
+    private List<int[]> comparingTheMelodySoundTo(String[][] fingerboardDiagram, String melody, int octave) {
         List<int[]> candidate = new ArrayList<>();
 
         for (int string = 0; string < Guitar.FINGERBOARD_DIAGRAM.length; string++) {
             for (int fret = 0; fret < Guitar.FINGERBOARD_DIAGRAM[string].length; fret++) {
                 String fingerboardSound = Guitar.FINGERBOARD_DIAGRAM[string][fret];
+                int fingerboardOctave = Guitar.FINGERBOARD_OCTAVE[string][fret];
 
-                if (melody.equals(fingerboardSound)) {
+                if (melody.equals(fingerboardSound) && fingerboardOctave==octave) {
                     int[] pressingPosition = {string, fret};
 
                     //melodyに一致するポジションのリストを作成
