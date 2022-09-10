@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] オクターブのリストを追加。">
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] オクターブの情報の受け取りを作成">
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/pojo/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/entity/Guitar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FingeringOptimizationApp/service/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00016" summary="[更新] メイン画面のメソッドを追加">
-      <created>1660783699375</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1660783699375</updated>
     </task>
     <task id="LOCAL-00017" summary="[更新] メイン画面の作成">
       <created>1660783727164</created>
@@ -472,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662683764333</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="[更新] オクターブの情報の受け取りを作成">
+      <created>1662685581648</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1662685581648</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -487,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="無視" />
     <MESSAGE value="[更新]" />
     <MESSAGE value="[更新] cssの追加" />
     <MESSAGE value="[更新] bootStrapの追加" />
@@ -512,6 +510,7 @@
     <MESSAGE value="[修正] 出力のコードを修正" />
     <MESSAGE value="[更新] パッケージ名を変更。" />
     <MESSAGE value="[更新] オクターブのリストを追加。" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] オクターブのリストを追加。" />
+    <MESSAGE value="[更新] オクターブの情報の受け取りを作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] オクターブの情報の受け取りを作成" />
   </component>
 </project>
