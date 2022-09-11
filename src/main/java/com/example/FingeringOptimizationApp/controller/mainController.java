@@ -15,7 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping("")
 public class mainController {
     @ModelAttribute
     public ConditionForm setUpForm() {
@@ -27,13 +26,14 @@ public class mainController {
     @Autowired
     SubProcess subProcess;
 
-    @GetMapping("")
+    @GetMapping("/app")
     public String index(){
         return "index";
     }
 
-    @PostMapping("findout")
+    @PostMapping("/findout")
      public String findOut(ConditionForm f, Model model){
+        List<String> melodies = f.getMelodies();
         System.out.println("[ 入力 ]");
         System.out.println(f.getMelodies().toString());
         //処理
@@ -50,6 +50,7 @@ public class mainController {
 
         List<boolean[][]> bitLists = subProcess.convertBitList(results);
 
+        model.addAttribute("melodies", melodies);
         model.addAttribute("results",results);
         model.addAttribute("bitLists",bitLists);
 

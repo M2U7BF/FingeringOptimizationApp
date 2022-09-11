@@ -15,7 +15,8 @@
                 <th:block th:each="h : ${#numbers.sequence(0, 5)}">
                     <h2 class="result-summary secondary-text">
                         <span class="result-summary-text">
-                            <th:block th:each="position:${results.get(h)}">
+                            <th:block th:each="position, i:${results.get(h)}">
+                                <span>[[${melodies[i.index]}]]</span>
                                 <span>[[ |(${position[0]+1},${position[1]+1})| ]]</span>
                             </th:block>
                         </span>
