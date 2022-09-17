@@ -1,69 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/html"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout/base-layout}">
     <head>
         <meta charset="UTF-8">
         <title>[[#{title.about}]] | [[#{app.title}]] </title>
+        <link rel="stylesheet" href="../about.css">
     </head>
     <body>
-        <main>
-            <ul class="about-author">
-                <li>
-                    <h1 class="text-title">作者について</h1>
-                </li>
-                <li>
-                    <img class="simple-icon author-img" src="">
-                </li>
-                <li>
-                    <h2 class="author-head">名前 : </h2>
-                    <p>亀井一矢</p>
-                </li>
-                <li>
-                    <h2 class="description">概要 : </h2>
-                    <p>
-                        趣味のひとつにギターがあるプログラマーです。<br>
-                    </p>
-                    <ul class="example-imges">
-                        <img class="simple-icon" src=""><!-- spitz -->
-                        <img class="simple-icon" src=""><!-- oasis -->
-                        <img class="simple-icon" src=""><!-- deep perple -->
-                    </ul>
-                </li>
-            </ul>
-            <ul class="about-app">
-                <li>
-                    <h1 class="text-title">当アプリについて</h1>
-                </li>
-                <li>
-                    <img class="simple-icon app-img" src="">
-                </li>
-                <li>
-                    <h2 class="app-name-head">名前 : </h2>
-                    <p>運指最適化アプリ</p>
-                </li>
-                <li class="birth-head">
-                    <h3>作成経緯 : </h3>
-                    <p>自分の気に入った曲をギターで弾くときに、譜面を作ろうと思ったのですが、<br>
-                        ギターのどの場所を押さえれば効率的なのか判断するには相当な経験や相応の技術が要求されますし、<br>
-                        自分自信も初心者がどのように譜面を作成すればいいか皆目見当がつきませんでした。<br>
-                        そこで、｢アプリにやってもらおう｣と思い作成をはじめました。
-                    </p>
-                </li>
-                <li class="features-head">
-                    <h3>機能 : </h3>
-                    <p>
-                        ･ 4音ごと、適切な押弦位置を分析<br>
-                        ･ 結果表示において、複数の押弦位置をまとめる<br>
-                        ･ 音の高さの指定(度数およびオクターブ)
-                    </p>
-                </li>
-                <li class="technical-detail-head">
-                    <h3>技術的な詳細 : </h3>
-                    <p>
-                        技術的な詳細はこちらにまとめています
-                        <button>GitHubへ</button>
-                    </p>
-                </li>
-            </ul>
-        </main>
+        <th:block layout:fragment="content">
+            <main>
+                <ul class="about-author text-container">
+                    <li class="text-block">
+                        <h1 class="text-title">作者について</h1>
+                    </li>
+                    <li class="author-name">
+                        <div class="text-block">
+                            <h2 class="author-head text-sub-title">名前 : </h2>
+                            <p class="text">亀井一矢</p>
+                        </div>
+                        <div class="img-block">
+                            <img class="simple-icon author-img" src="../img/author_face_img_round.png" alt="作者の画像">
+                        </div>
+                    </li>
+                    <li class="author-summary">
+                        <div class="text-block">
+                            <h2 class="description text-sub-title">概要 : </h2>
+                            <p class="text">
+                                趣味のひとつにギターがあるプログラマーです。<br>
+                            </p>
+                        </div>
+                        <div class="img-block">
+                            <ul class="example-imges">
+                                <li><img class="simple-icon" src="../img/guitar_img_round.png"></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="about-app text-container">
+                    <li>
+                        <h1 class="text-title">当アプリについて</h1>
+                    </li>
+                    <li>
+                        <img class="simple-icon app-img" src="">
+                    </li>
+                    <li class="app-name text-block">
+                        <h2 class="app-name-head text-sub-title">名前 : </h2>
+                        <p class="text">運指最適化アプリ</p>
+                    </li>
+                    <li class="birth text-block">
+                        <h3 class="text-sub-title">作成経緯 : </h3>
+                        <p class="text">自分の気に入った曲をギターで弾くときに、譜面を作ろうと思ったのですが、<br>
+                            ギターのどの場所を押さえれば効率的なのか判断するには相当な経験や相応の技術が要求されますし、<br>
+                            自分自信も初心者がどのように譜面を作成すればいいか皆目見当がつきませんでした。<br><br>
+                            そこで、｢アプリにやってもらおう｣と思い作成をはじめました。
+                        </p>
+                    </li>
+                    <li class="app-features text-block">
+                        <h3 class="text-sub-title">機能 : </h3>
+                        <p class="text">
+                            ･ 4音ごと、適切な押弦位置を分析<br>
+                            ･ 結果表示において、複数の押弦位置をまとめる<br>
+                            ･ 音の高さの指定(度数およびオクターブ)
+                        </p>
+                    </li>
+                    <li class="technical-detail text-block">
+                        <h3 class="text-sub-title">技術的な詳細 : </h3>
+                        <div class="inner-container">
+                            <p class="text">
+                                技術的な詳細はGitHubにて、まとめています。
+                            </p>
+                            <a href="https://github.com/M2U7BF/FingeringOptimizationApp" class="btn btn-primary btn-lg">GitHubへ</a>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+        </th:block>
     </body>
 </html>
