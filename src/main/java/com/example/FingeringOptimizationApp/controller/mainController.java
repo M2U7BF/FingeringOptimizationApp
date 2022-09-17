@@ -31,7 +31,7 @@ public class mainController {
         return "index";
     }
 
-    @PostMapping("/findout")
+    @PostMapping("/find-out")
      public String findOut(ConditionForm f, Model model){
         List<String> melodies = f.getMelodies();
         System.out.println("[ 入力 ]");
