@@ -1,0 +1,13 @@
+// フォントサイズの変数
+$primary-text: 40px;
+$secondary-text: 25px;
+$normal-text: 20px;
+
+// 余白の変数
+$flex_gap: 20px;
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    gap: $flex_gap;
+}

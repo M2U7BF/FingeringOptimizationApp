@@ -1,0 +1,34 @@
+@import "common.scss";
+
+.content-description{
+    margin-bottom: 30px;
+}
+
+.result-summary{
+    margin-bottom: 20px;
+}
+.result-summary-text{
+    border-bottom: 2px solid rgb(179, 179, 179);
+    padding-bottom: 10px;
+}
+
+.result-list-elem{
+    list-style-type: none;
+}
+
+.flet-number{
+    margin: 0px;
+    padding: 0px 10px;
+}
+.flet-number-wrapper{
+    padding: 1vh 1vw;
+}
+
+.result-position{
+    background-color: black;
+    color: white;
+}
+
+.restart-button{
+    margin-bottom: 30px;
+}

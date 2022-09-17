@@ -1,0 +1,16 @@
+@import "common.scss";
+
+.contents{
+    height: 100vh;
+}
+
+.condition-form-inner{
+    @include flex-center();
+
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.form-select{
+    width: 50vh;
+}
