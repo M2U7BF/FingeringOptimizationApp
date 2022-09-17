@@ -1,0 +1,38 @@
+@import "common.scss";
+
+.text-container{
+    list-style-type: none;
+    @include primary_block();
+}
+.text-block{
+    @include secondary_block();
+}
+
+.text-title{
+    @include text_title();
+}
+.text-sub-title{
+    @include text_sub_title();
+}
+.text{
+    @include text();
+}
+
+.simple-icon{
+    width: 100px;
+    margin-left: 100px;
+}
+.example-imges{
+    list-style-type: none;;
+}
+
+
+
+.author-name, .author-summary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-detail .inner-container{
+    @include flex_start();
+}

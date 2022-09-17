@@ -6,8 +6,48 @@ $normal-text: 20px;
 // 余白の変数
 $flex_gap: 20px;
 
-@mixin flex-center(){
+
+//文章のプロパティ
+@mixin text_title(){ //文章のスタイル
+    font-size: $primary-text;
+    font-family: 'NoteSansJP_bold';
+}
+@mixin text_sub_title(){ //文章のスタイル
+    font-size: $secondary-text;
+    font-family: 'NoteSansJP_bold';
+}
+@mixin text(){
+    font-size: $normal-text;
+    font-family: 'NoteSansJP';
+}
+
+//塊別プロパティ
+@mixin primary_block(){
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+@mixin secondary_block(){
+    margin-top: 10px;
+    margin-bottom: 2em;
+}
+
+//細部
+@mixin flex_center($gap: $flex_gap){
     display: flex;
     justify-content: center;
-    gap: $flex_gap;
+    gap: $gap;
+}
+@mixin flex_start($gap: $flex_gap){
+    display: flex;
+    justify-content: start;
+    gap: $gap;
+}
+
+@font-face {
+	font-family: 'NoteSansJP';
+	src: url(./fonts/NotoSansJP-Regular.otf);
+}
+@font-face {
+	font-family: 'NoteSansJP_bold';
+	src: url(./fonts/NotoSansJP-Bold.otf);
 }

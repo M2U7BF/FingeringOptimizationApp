@@ -9,7 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] アプリの説明画面の追加" />
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] アプリについての画面のハンドラメソッドの追加">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/NotoSansJP-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/NotoSansJP-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/author_face_img_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/guitar_img_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+    </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,20 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00031" summary="[更新] 変化記号の入力部分を削除">
-      <created>1660976679189</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1660976679189</updated>
-    </task>
-    <task id="LOCAL-00032" summary="[更新]">
-      <created>1660976686381</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1660976686381</updated>
     </task>
     <task id="LOCAL-00033" summary="無視">
       <created>1660976692700</created>
@@ -477,7 +487,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663379804732</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="[修正] テキストの修正">
+      <created>1663379946254</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1663379946254</updated>
+    </task>
+    <task id="LOCAL-00081" summary="[更新] アプリについての画面のハンドラメソッドの追加">
+      <created>1663380106863</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1663380106863</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,8 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[更新] ヘッダーのスタイルを更新" />
-    <MESSAGE value="[更新] 結果表示をよりわかりやすいように作成" />
     <MESSAGE value="[更新] 結果表示のスタイルを修正" />
     <MESSAGE value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
     <MESSAGE value="[更新] テストコードの追加" />
@@ -518,6 +540,8 @@
     <MESSAGE value="[修正] エラー部分をコメントアウト" />
     <MESSAGE value="[更新]" />
     <MESSAGE value="[更新] アプリの説明画面の追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] アプリの説明画面の追加" />
+    <MESSAGE value="[修正] テキストの修正" />
+    <MESSAGE value="[更新] アプリについての画面のハンドラメソッドの追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] アプリについての画面のハンドラメソッドの追加" />
   </component>
 </project>

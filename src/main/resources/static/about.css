@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "NoteSansJP";
+  src: url(./fonts/NotoSansJP-Regular.otf);
+}
+@font-face {
+  font-family: "NoteSansJP_bold";
+  src: url(./fonts/NotoSansJP-Bold.otf);
+}
+.text-container {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.text-block {
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.text-title {
+  font-size: 40px;
+  font-family: "NoteSansJP_bold";
+}
+
+.text-sub-title {
+  font-size: 25px;
+  font-family: "NoteSansJP_bold";
+}
+
+.text {
+  font-size: 20px;
+  font-family: "NoteSansJP";
+}
+
+.simple-icon {
+  width: 100px;
+  margin-left: 100px;
+}
+
+.example-imges {
+  list-style-type: none;
+}
+
+.author-name, .author-summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technical-detail .inner-container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}/*# sourceMappingURL=about.css.map */

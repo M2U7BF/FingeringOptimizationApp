@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "NoteSansJP";
+  src: url(./fonts/NotoSansJP-Regular.otf);
+}
 .content-description {
   margin-bottom: 30px;
 }

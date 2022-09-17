@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "NoteSansJP";
+  src: url(./fonts/NotoSansJP-Regular.otf);
+}
+@font-face {
+  font-family: "NoteSansJP_bold";
+  src: url(./fonts/NotoSansJP-Bold.otf);
+}
 .footer {
   padding: 30px 0px;
   text-align: center;

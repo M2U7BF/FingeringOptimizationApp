@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "NoteSansJP";
+  src: url(./fonts/NotoSansJP-Regular.otf);
+}
+@font-face {
+  font-family: "NoteSansJP_bold";
+  src: url(./fonts/NotoSansJP-Bold.otf);
+}
 .contents {
   height: 100vh;
 }
