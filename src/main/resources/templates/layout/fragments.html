@@ -1,0 +1,8 @@
+<th:block xmlns:th="http://www.w3.org/1999/xhtml">
+    <th:block th:fragment="link-list">
+        <th:block th:each="link, stat : ${ {'index', 'about'} }">
+            <li class="link" th:insert="~{layout/links::${link}}"></li>
+            <span th:unless="${stat.last}"> | </span>
+        </th:block>
+    </th:block>
+</th:block>
