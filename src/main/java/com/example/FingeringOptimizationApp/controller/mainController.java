@@ -55,5 +55,10 @@ public class mainController {
         model.addAttribute("bitLists",bitLists);
 
         return "result";
-     }
+    }
+
+    @GetMapping("/about")
+    public String about(){
+        return "about";
+    }
 }
