@@ -1,15 +1,15 @@
-.contents{
-    height: 100vh;
+.contents {
+  height: 100vh;
 }
 
-.condition-form-inner{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
-    margin-top: 80px;
+.condition-form-inner {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 80px;
 }
 
-.form-select{
-    width: 50vh;
-}
+.form-select {
+  width: 50vh;
+}/*# sourceMappingURL=index.css.map */
