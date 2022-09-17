@@ -6,3 +6,15 @@
         </th:block>
     </th:block>
 </th:block>
+
+<th:block xmlns:th="http://www.w3.org/1999/xhtml">
+    <th:block th:fragment="nav">
+        <nav class="hide">
+            <ul class="nav-link-list">
+                <th:block th:each="link, stat : ${ {'index', 'about'} }">
+                    <li class="link" th:insert="~{layout/links::${link}}"></li>
+                </th:block>
+            </ul>
+        </nav>
+    </th:block>
+</th:block>
