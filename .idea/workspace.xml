@@ -9,30 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] アプリについての画面のハンドラメソッドの追加">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/NotoSansJP-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/NotoSansJP-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/author_face_img_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/guitar_img_round.png" afterDir="false" />
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[修正] urlの修正">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/result.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/result.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,41 +148,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00033" summary="無視">
-      <created>1660976692700</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1660976692700</updated>
-    </task>
-    <task id="LOCAL-00034" summary="[更新]">
-      <created>1660976733062</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1660976733062</updated>
-    </task>
-    <task id="LOCAL-00035" summary="[更新]">
-      <created>1660981384023</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1660981384023</updated>
-    </task>
-    <task id="LOCAL-00036" summary="[更新]">
-      <created>1660982086478</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1660982086478</updated>
-    </task>
-    <task id="LOCAL-00037" summary="[更新]">
-      <created>1660982550166</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1660982550166</updated>
     </task>
     <task id="LOCAL-00038" summary="[更新]">
       <created>1660983481613</created>
@@ -501,7 +457,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663380106863</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="[更新] スタイルの更新">
+      <created>1663388497754</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1663388497754</updated>
+    </task>
+    <task id="LOCAL-00083" summary="[追加] フォントファイルの追加">
+      <created>1663388531575</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1663388531575</updated>
+    </task>
+    <task id="LOCAL-00084" summary="[追加] 画像の追加">
+      <created>1663388539729</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1663388539729</updated>
+    </task>
+    <task id="LOCAL-00085" summary="[更新] スタイル適用のための変更">
+      <created>1663388563976</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1663388563976</updated>
+    </task>
+    <task id="LOCAL-00086" summary="[修正] urlの修正">
+      <created>1663388670116</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1663388670116</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,11 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[更新] 結果表示のスタイルを修正" />
-    <MESSAGE value="[更新] 弦、フレット の番号の表示を実物に一致させた" />
-    <MESSAGE value="[更新] テストコードの追加" />
-    <MESSAGE value="[更新] findOutメソッドのテストコードの追加" />
-    <MESSAGE value="[更新] obtainTheVarianceメソッドのテストコードの追加" />
     <MESSAGE value="[更新] リストの出力を修正" />
     <MESSAGE value="[修正] 不要なコードを削除" />
     <MESSAGE value="[修正] 出力のコードを修正" />
@@ -542,6 +528,11 @@
     <MESSAGE value="[更新] アプリの説明画面の追加" />
     <MESSAGE value="[修正] テキストの修正" />
     <MESSAGE value="[更新] アプリについての画面のハンドラメソッドの追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] アプリについての画面のハンドラメソッドの追加" />
+    <MESSAGE value="[更新] スタイルの更新" />
+    <MESSAGE value="[追加] フォントファイルの追加" />
+    <MESSAGE value="[追加] 画像の追加" />
+    <MESSAGE value="[更新] スタイル適用のための変更" />
+    <MESSAGE value="[修正] urlの修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="[修正] urlの修正" />
   </component>
 </project>

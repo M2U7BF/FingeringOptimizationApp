@@ -1,3 +1,7 @@
+//色の変数
+$main_color:white;
+$sub_main_color:#f4f4f2;
+
 // フォントサイズの変数
 $primary-text: 40px;
 $secondary-text: 25px;
@@ -50,4 +54,11 @@ $flex_gap: 20px;
 @font-face {
 	font-family: 'NoteSansJP_bold';
 	src: url(./fonts/NotoSansJP-Bold.otf);
+}
+
+.container{
+    margin-top: 150px;
+}
+.hide{
+    display: none !important;
 }

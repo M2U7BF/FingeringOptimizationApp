@@ -5,4 +5,11 @@
 @font-face {
   font-family: "NoteSansJP_bold";
   src: url(./fonts/NotoSansJP-Bold.otf);
+}
+.container {
+  margin-top: 150px;
+}
+
+.hide {
+  display: none !important;
 }/*# sourceMappingURL=common.css.map */

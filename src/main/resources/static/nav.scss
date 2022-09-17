@@ -1,0 +1,34 @@
+@import "common.scss";
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: $sub_main_color;
+}
+
+.nav-link-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    font-size: $normal-text;
+}
+
+.nav-link-list .link{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link-list .link a{
+    text-decoration: none;
+    color: #000000;
+
+    &active{
+        color: #000000;
+    }
+}
