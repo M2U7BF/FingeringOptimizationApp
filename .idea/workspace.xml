@@ -9,22 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[修正] urlの修正">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/base-layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.html" afterDir="false" />
-    </list>
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 外部ファイルの読み込みを追加" />
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,41 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00038" summary="[更新]">
-      <created>1660983481613</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1660983481613</updated>
-    </task>
-    <task id="LOCAL-00039" summary="[更新]">
-      <created>1660984147203</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1660984147203</updated>
-    </task>
-    <task id="LOCAL-00040" summary="[更新]">
-      <created>1660985374133</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1660985374133</updated>
-    </task>
-    <task id="LOCAL-00041" summary="[更新] cssの追加">
-      <created>1661043110904</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1661043110905</updated>
-    </task>
-    <task id="LOCAL-00042" summary="[更新] bootStrapの追加">
-      <created>1661043127968</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1661043127968</updated>
     </task>
     <task id="LOCAL-00043" summary="[更新] タイムリーフのレイアウトを導入">
       <created>1661044378951</created>
@@ -492,7 +442,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663388670116</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="[更新] スタイルの更新">
+      <created>1663393994585</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1663393994585</updated>
+    </task>
+    <task id="LOCAL-00088" summary="[更新] ヘッダーを触れたときにメニュー画面が開くような処理を追加">
+      <created>1663394023212</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1663394023212</updated>
+    </task>
+    <task id="LOCAL-00089" summary="[更新] ナビゲーションバーの追加">
+      <created>1663394044667</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1663394044668</updated>
+    </task>
+    <task id="LOCAL-00090" summary="[更新] ナビゲーションバーの追加">
+      <created>1663394056207</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1663394056207</updated>
+    </task>
+    <task id="LOCAL-00091" summary="[更新] 外部ファイルの読み込みを追加">
+      <created>1663394071587</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1663394071587</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,9 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[更新] リストの出力を修正" />
-    <MESSAGE value="[修正] 不要なコードを削除" />
-    <MESSAGE value="[修正] 出力のコードを修正" />
     <MESSAGE value="[更新] パッケージ名を変更。" />
     <MESSAGE value="[更新] オクターブのリストを追加。" />
     <MESSAGE value="[更新] オクターブの情報の受け取りを作成" />
@@ -528,11 +510,14 @@
     <MESSAGE value="[更新] アプリの説明画面の追加" />
     <MESSAGE value="[修正] テキストの修正" />
     <MESSAGE value="[更新] アプリについての画面のハンドラメソッドの追加" />
-    <MESSAGE value="[更新] スタイルの更新" />
     <MESSAGE value="[追加] フォントファイルの追加" />
     <MESSAGE value="[追加] 画像の追加" />
     <MESSAGE value="[更新] スタイル適用のための変更" />
     <MESSAGE value="[修正] urlの修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[修正] urlの修正" />
+    <MESSAGE value="[更新] スタイルの更新" />
+    <MESSAGE value="[更新] ヘッダーを触れたときにメニュー画面が開くような処理を追加" />
+    <MESSAGE value="[更新] ナビゲーションバーの追加" />
+    <MESSAGE value="[更新] 外部ファイルの読み込みを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新] 外部ファイルの読み込みを追加" />
   </component>
 </project>
