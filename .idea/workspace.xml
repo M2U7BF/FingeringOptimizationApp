@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新] 外部ファイルの読み込みを追加" />
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[修正] scssファイルの移動">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/apprication.properties" beforeDir="false" />
+    </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +66,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/scss" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -133,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00043" summary="[更新] タイムリーフのレイアウトを導入">
-      <created>1661044378951</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1661044378951</updated>
     </task>
     <task id="LOCAL-00044" summary="[修正] cssの消去">
       <created>1661044408725</created>
@@ -477,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663394071587</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="[修正] scssファイルの移動">
+      <created>1663461351652</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1663461351653</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="[更新] パッケージ名を変更。" />
     <MESSAGE value="[更新] オクターブのリストを追加。" />
     <MESSAGE value="[更新] オクターブの情報の受け取りを作成" />
     <MESSAGE value="[更新] 受け取ったオクターブの情報を元に、位置を探す処理を作成" />
@@ -518,6 +523,7 @@
     <MESSAGE value="[更新] ヘッダーを触れたときにメニュー画面が開くような処理を追加" />
     <MESSAGE value="[更新] ナビゲーションバーの追加" />
     <MESSAGE value="[更新] 外部ファイルの読み込みを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="[更新] 外部ファイルの読み込みを追加" />
+    <MESSAGE value="[修正] scssファイルの移動" />
+    <option name="LAST_COMMIT_MESSAGE" value="[修正] scssファイルの移動" />
   </component>
 </project>
