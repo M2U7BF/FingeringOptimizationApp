@@ -6,6 +6,14 @@
   font-family: "NoteSansJP_bold";
   src: url(./fonts/NotoSansJP-Bold.otf);
 }
+.container {
+  margin-top: 150px;
+}
+
+.hide {
+  display: none !important;
+}
+
 .contents {
   height: 100vh;
 }
@@ -20,4 +28,27 @@
 
 .form-select {
   width: 50vh;
+}
+
+.control-buttons {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  position: relative;
+  left: -50px;
+  top: -25px;
+  z-index: -1;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 30px;
+  font-family: "NoteSansJP_bold";
+  font-size: 30px;
 }/*# sourceMappingURL=index.css.map */

@@ -14,3 +14,21 @@
 .form-select{
     width: 50vh;
 }
+
+.control-buttons{
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -50px;
+    top: -25px;
+    z-index: -1;
+}
+
+.control-button{
+    @include button_initialization();
+    height: 30px;
+    font-family: 'NoteSansJP_bold';
+    font-size: 30px;
+}

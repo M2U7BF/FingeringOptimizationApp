@@ -35,6 +35,16 @@ $flex_gap: 20px;
     margin-bottom: 2em;
 }
 
+//スタイル初期化
+@mixin button_initialization(){
+    background: none;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 //細部
 @mixin flex_center($gap: $flex_gap){
     display: flex;

@@ -9,11 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[修正] scssファイルの移動">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="2db42704-d341-4e68-b61c-0f91ca27a9dc" name="Changes" comment="[更新]">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/common.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/apprication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scss/common.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scss/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scss/index.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scss/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <list id="ff36f3c9-5aa9-4edc-8685-02359c1aaa93" name="無視" comment="[更新]" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,13 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659227335913</updated>
-    </task>
-    <task id="LOCAL-00044" summary="[修正] cssの消去">
-      <created>1661044408725</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1661044408725</updated>
     </task>
     <task id="LOCAL-00045" summary="[更新] cssファイル読み込みを追加">
       <created>1661130306271</created>
@@ -483,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663461351653</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="[更新]">
+      <created>1663464987738</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1663464987738</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,7 +518,6 @@
     <MESSAGE value="[更新] リンクのリストを追加" />
     <MESSAGE value="[更新] タイトルをプロパティファイルから読み込むよう変更" />
     <MESSAGE value="[修正] エラー部分をコメントアウト" />
-    <MESSAGE value="[更新]" />
     <MESSAGE value="[更新] アプリの説明画面の追加" />
     <MESSAGE value="[修正] テキストの修正" />
     <MESSAGE value="[更新] アプリについての画面のハンドラメソッドの追加" />
@@ -524,6 +530,7 @@
     <MESSAGE value="[更新] ナビゲーションバーの追加" />
     <MESSAGE value="[更新] 外部ファイルの読み込みを追加" />
     <MESSAGE value="[修正] scssファイルの移動" />
-    <option name="LAST_COMMIT_MESSAGE" value="[修正] scssファイルの移動" />
+    <MESSAGE value="[更新]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[更新]" />
   </component>
 </project>
