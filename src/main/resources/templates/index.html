@@ -16,6 +16,7 @@
                     <!--        <p>曲の音 : </p>-->
 
                     <div class="condition-form-inner">
+                        <div class="control-buttons"></div>
                         <th:block th:each="i : ${#numbers.sequence(0, 3)}">
                             <select class="form-select" name="melodies">
                                 <th:block th:each="note : ${ {
@@ -29,6 +30,10 @@
                     </div>
 
                     <div class="condition-form-inner">
+                        <div class="control-buttons">
+                            <button type="button" class="control-button up">▲</button>
+                            <button type="button" class="control-button down">▼</button>
+                        </div>
                         <th:block th:each="i : ${#numbers.sequence(0, 3)}">
                             <select class="form-select" name="octaves">
                                 <th:block th:each="octave : ${ {
